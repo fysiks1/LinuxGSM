@@ -16,43 +16,46 @@ fn_script_log_info "Retrieving latest mods URLs"
 # Metamod (Half-life 1 Classic Engine)
 metamodversion="1.21.1-am"
 metamodlatestfile="metamod-${metamodversion}.zip"
-metamoddownloadurl="https://www.amxmodx.org/release/${metamodlatestfile}"
+metamoddownloadurl="${amxxrooturl}/${metamodlatestfile}"
 metamodurl="${metamoddownloadurl}"
+# AMX Mod X: Common
+amxxrooturl="https://www.amxmodx.org/amxxdrop/1.9"
+amxxversion="1.9.0-git5271"
 # AMX Mod X: Base
-amxxbaseversion="1.8.2"
+amxxbaseversion=${amxxversion}
 amxxbasemod="base"
 amxxbaselatestfile="amxmodx-${amxxbaseversion}-${amxxbasemod}-linux.tar.gz"
-amxxbasedownloadurl="https://www.amxmodx.org/release/${amxxbaselatestfile}"
+amxxbasedownloadurl="${amxxrooturl}/${amxxbaselatestfile}"
 amxxbaseurl="${amxxbasedownloadurl}"
 # AMX Mod X: Counter-Strike
-amxxcsversion="1.8.2"
+amxxcsversion=${amxxversion}
 amxxcsmod="cstrike"
-amxxcslatestfile="amxmodx-${amxxbaseversion}-${amxxcsmod}-linux.tar.gz"
-amxxcsdownloadurl="https://www.amxmodx.org/release/${amxxcslatestfile}"
+amxxcslatestfile="amxmodx-${amxxcsversion}-${amxxcsmod}-linux.tar.gz"
+amxxcsdownloadurl="${amxxrooturl}/${amxxcslatestfile}"
 amxxcsurl="${amxxcsdownloadurl}"
 # AMX Mod X: Day of Defeat
-amxxdodversion="1.8.2"
+amxxdodversion=${amxxversion}
 amxxdodmod="dod"
 amxxdodlatestfile="amxmodx-${amxxdodversion}-${amxxdodmod}-linux.tar.gz"
-amxxdoddownloadurl="https://www.amxmodx.org/release/${amxxdodlatestfile}"
+amxxdoddownloadurl="${amxxrooturl}/${amxxbaselatestfile}"
 amxxdodurl="${amxxdoddownloadurl}"
 # AMX Mod X: Team Fortress Classic
-amxxtfcversion="1.8.2"
+amxxtfcversion=${amxxversion}
 amxxtfcmod="tfc"
 amxxtfclatestfile="amxmodx-${amxxtfcversion}-${amxxtfcmod}-linux.tar.gz"
-amxxtfcdownloadurl="https://www.amxmodx.org/release/${amxxtfclatestfile}"
+amxxtfcdownloadurl="${amxxrooturl}/${amxxtfclatestfile}"
 amxxtfcurl="${amxxtfcdownloadurl}"
 # AMX Mod X: Natural Selection
-amxxnsversion="1.8.2"
+amxxnsversion=${amxxversion}
 amxxnsmod="ns"
 amxxnslatestfile="amxmodx-${amxxnsversion}-${amxxnsmod}-linux.tar.gz"
-amxxnsdownloadurl="https://www.amxmodx.org/release/${amxxnslatestfile}"
+amxxnsdownloadurl="${amxxrooturl}/${amxxnslatestfile}"
 amxxnsurl="${amxxnsdownloadurl}"
 # AMX Mod X: The Specialists
-amxxtsversion="1.8.2"
+amxxtsversion=${amxxversion}
 amxxtsmod="ts"
 amxxtslatestfile="amxmodx-${amxxtsversion}-${amxxtsmod}-linux.tar.gz"
-amxxtsdownloadurl="https://www.amxmodx.org/release/${amxxtslatestfile}"
+amxxtsdownloadurl="${amxxrooturl}/${amxxtslatestfile}"
 amxxtsurl="${amxxtsdownloadurl}"
 # Metamod:Source
 metamodsourceversion="1.10"
