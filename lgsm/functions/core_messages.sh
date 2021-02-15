@@ -350,7 +350,7 @@ fn_prompt_yn(){
 	fi
 
 	while true; do
-		read -e -i "${initial}" -p  "${prompt}" -r yn
+		read -e -p  "${prompt}" -r yn
 		case "${yn}" in
 			[Yy]|[Yy][Ee][Ss]) return 0 ;;
 			[Nn]|[Nn][Oo]) return 1 ;;
